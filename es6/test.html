@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Testing ES6</title>
+</head>
+<body>
+<script>
+	function log(str) {
+		console.log.apply(console, arguments);
+		logFld.innerHTML += "<p>"+Array.prototype.join.call(arguments, " ")+"</p>";
+	}
+</script>
+<div id="logFld"></div>
+<script src="js/User.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
